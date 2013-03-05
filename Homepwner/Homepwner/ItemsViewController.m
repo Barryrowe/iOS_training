@@ -11,7 +11,7 @@
 #import "BNRItem.h"
 
 @interface ItemsViewController()
-@property (nonatomic, strong) IBOutlet UIView *headerView;
+//@property (nonatomic, strong) IBOutlet UIView *headerView;
 
 - (IBAction) addNewItem:(id) sender;
 //- (IBAction) toggleEditingMode:(id)sender;
@@ -79,6 +79,8 @@
 - (void) viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [[self tableView] reloadData];
+    [[self tableView] setBackgroundView:nil];
+    [[self tableView] setBackgroundColor:[UIColor purpleColor]];
 }
 
 - (id)init{
@@ -87,7 +89,7 @@
     if(self) {
         UINavigationItem *n = [self navigationItem];
         [n setTitle:@"Homepwner"];
-        
+
         //Create a new bar button item that will send
         //  addNewItem: to ItemsViewController
         UIBarButtonItem *bbiAdd = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
@@ -129,6 +131,14 @@
 //
 //UITableViewDataSource Implementations
 //
+- (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if([self isIndexLastIndex:indexPath]){
+        return 44;
+    }else{
+        return 60;
+    }
+}
+
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     NSInteger c = [[[BNRItemStore sharedStore] allItems] count];
     NSLog(@"Count is Called %d",c);
@@ -149,6 +159,10 @@
 }
 
 - (void) tableView:(UITableView *)aTableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    if([self isIndexLastIndex:indexPath]){
+        return;
+    }
     DetailViewController *detailViewController = [[DetailViewController alloc] init];
     
     NSArray *items = [[BNRItemStore sharedStore] allItems];
@@ -194,6 +208,8 @@
 
         NSLog(@"%@ ", [p description]);
         [[cell textLabel] setText:[p description]];
+        [[cell textLabel] setFont: [UIFont systemFontOfSize:20]];
+        [cell setBackgroundColor:[UIColor yellowColor]];
     }
     return cell;
 }
