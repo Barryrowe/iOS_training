@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 @class BNRItem;
 
-@interface DetailViewController : UIViewController
+@interface DetailViewController : UIViewController <UIImagePickerControllerDelegate, UITextFieldDelegate>
 @property (nonatomic, strong) BNRItem *item;
 
 @end

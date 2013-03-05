@@ -22,6 +22,7 @@
 		84485BEB16E6537B00E18021 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84485BEA16E6537B00E18021 /* HeaderView.xib */; };
 		84485BEF16E6734D00E18021 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84485BED16E6734D00E18021 /* DetailViewController.m */; };
 		84485BF016E6734D00E18021 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84485BEE16E6734D00E18021 /* DetailViewController.xib */; };
+		846C64F116E69CA400EAC5BC /* BNRImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 846C64F016E69CA400EAC5BC /* BNRImageStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,8 @@
 		84485BEC16E6734D00E18021 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		84485BED16E6734D00E18021 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		84485BEE16E6734D00E18021 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		846C64EF16E69CA400EAC5BC /* BNRImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRImageStore.h; sourceTree = "<group>"; };
+		846C64F016E69CA400EAC5BC /* BNRImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRImageStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,8 @@
 				84485BEC16E6734D00E18021 /* DetailViewController.h */,
 				84485BED16E6734D00E18021 /* DetailViewController.m */,
 				84485BEE16E6734D00E18021 /* DetailViewController.xib */,
+				846C64EF16E69CA400EAC5BC /* BNRImageStore.h */,
+				846C64F016E69CA400EAC5BC /* BNRImageStore.m */,
 			);
 			path = Homepwner;
 			sourceTree = "<group>";
@@ -199,6 +204,7 @@
 				84485BE616E63F7100E18021 /* BNRItem.m in Sources */,
 				84485BE916E63FA600E18021 /* BNRItemStore.m in Sources */,
 				84485BEF16E6734D00E18021 /* DetailViewController.m in Sources */,
+				846C64F116E69CA400EAC5BC /* BNRImageStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
