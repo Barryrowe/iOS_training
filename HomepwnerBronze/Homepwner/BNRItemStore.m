@@ -33,22 +33,11 @@
     return p;
 }
 
-- (void) removeItem:(BNRItem *)p{
-    [_allItems removeObjectIdenticalTo:p];
+- (NSArray *) sortByDescriptor:(NSSortDescriptor *)des{
+    NSMutableArray *cpy = [NSMutableArray arrayWithArray:_allItems];
+    [cpy sortUsingDescriptors:@[des]];
+    return cpy;
 }
-
-- (void) movieItemAtIndex:(int)from toIndex:(int)to{
-    if(from == to){ return;}
-    
-    // Get Pointer to boject being moved
-    BNRItem *target = [_allItems objectAtIndex:from];
-    [_allItems removeObjectAtIndex:from];
-    
-    [_allItems insertObject:target atIndex:to];
-}
-
-//
-//Class Methods
 
 + (BNRItemStore *) sharedStore{
     static BNRItemStore *sharedStore = nil;

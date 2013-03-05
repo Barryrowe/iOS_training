@@ -7,8 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DetailViewController.h"
 
-@interface ItemsViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
+@interface ItemsViewController : UITableViewController <UITableViewDataSource>
 
 @end

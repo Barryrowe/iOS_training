@@ -1,5 +1,5 @@
 //
-//  HomepwnerItemsViewController.h
+//  DetailViewController.h
 //  Homepwner
 //
 //  Created by Admin on 3/5/13.
@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+@class BNRItem;
 
-@interface ItemsViewController : UITableViewController
+@interface DetailViewController : UIViewController
+@property (nonatomic, strong) BNRItem *item;
 
 @end

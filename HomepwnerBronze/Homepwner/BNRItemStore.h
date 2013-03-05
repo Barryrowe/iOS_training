@@ -19,9 +19,5 @@
 @property (nonatomic, strong, readonly) NSArray *allItems;
 
 - (BNRItem *) createItem;
-
-- (void) removeItem:(BNRItem *)p;
-
-- (void) movieItemAtIndex:(int)from toIndex:(int)to;
-
+- (NSArray *) sortByDescriptor:(NSSortDescriptor *)des;
 @end

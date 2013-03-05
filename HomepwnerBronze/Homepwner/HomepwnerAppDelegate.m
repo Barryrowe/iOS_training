@@ -19,12 +19,8 @@
     // Create a ItemsViewController
     ItemsViewController *itemsViewController = [[ItemsViewController alloc] init];
     
-    // Create an instance of a UINavigation Controller
-    // its stack contains only itemsViewController
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:itemsViewController];
-    
     //Set the RootView Controller
-    [[self window] setRootViewController:navController];
+    [[self window] setRootViewController:itemsViewController];
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

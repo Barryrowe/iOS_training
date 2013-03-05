@@ -1,5 +1,5 @@
 //
-//  HomepwnerItemsViewController.h
+//  HomepwnerAppDelegate.h
 //  Homepwner
 //
 //  Created by Admin on 3/5/13.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ItemsViewController : UITableViewController
+@interface HomepwnerAppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
 
 @end
