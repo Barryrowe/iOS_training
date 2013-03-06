@@ -14,8 +14,8 @@ int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
-        TaskList *myTasks = [[TaskList alloc] initWithPath:@"/tmp/mytasks.plist"];
-        [myTasks loadTasksFromFile];
+        TaskList *myTasks = [[TaskList alloc] init];
+
         
         if(argc == 3){
             char *dueDate, *description;
@@ -40,7 +40,7 @@ int main(int argc, const char * argv[])
                 
                 [myTasks addTask:task];
                 
-                NSLog(@"List\n\n%@", [myTasks tasks]);
+                NSLog(@"List\n\n%@", [myTasks currentTasks]);
             }
             
             [myTasks writeTasksToFile];

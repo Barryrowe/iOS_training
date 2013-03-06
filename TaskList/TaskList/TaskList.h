@@ -11,15 +11,13 @@
 
 @interface TaskList : NSObject
 
-@property NSString *path;
-@property NSMutableArray *tasks;
-
-
-- (TaskList *) initWithPath:(NSString *)p;
+- (id) initWithPath:(NSString *)p;
 
 - (NSMutableArray *) loadTasksFromFile;
 
 - (void) writeTasksToFile;
 
 - (void) addTask:(Task *)t;
+
+- (NSArray *) currentTasks;
 @end

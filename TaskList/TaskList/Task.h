@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Task : NSObject
+@interface Task : NSObject <NSCoding>
 
 @property NSDate *dueDate;
 @property NSString *taskDescription;

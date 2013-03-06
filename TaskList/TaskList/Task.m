@@ -28,4 +28,24 @@
     NSString *result = [NSString stringWithFormat:@"Due Date: %@\nDescription: %@", [self dueDate], [self taskDescription]];
     return result;
 }
+
+//
+//NSCoding IMplementation
+//
+
+- (id) initWithCoder:(NSCoder *)aDecoder{
+    self = [super init];
+    if(self){
+        [self setDueDate:[aDecoder decodeObjectForKey:@"dueDate"]];
+        [self setTaskDescription:[aDecoder decodeObjectForKey:@"taskDescription"]];
+    }
+    
+    return self;
+}
+
+- (void) encodeWithCoder:(NSCoder *)aCoder{
+    [aCoder encodeObject:[self dueDate] forKey:@"dueDate"];
+    [aCoder encodeObject:[self taskDescription] forKey:@"taskDescription"];
+}
+//-----
 @end

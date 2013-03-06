@@ -29,7 +29,6 @@
 // Custom Implementation Methods
 //
 - (IBAction)backgroundTapped:(id)sender {
-    NSLog(@"%@", [NSString stringWithFormat:@"%s + %s + :)", "iOS Training", "snow" ]);
     [[self view] endEditing:YES];
 }
 

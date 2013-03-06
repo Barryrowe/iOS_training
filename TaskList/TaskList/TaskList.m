@@ -8,46 +8,37 @@
 
 #import "TaskList.h"
 
+@interface TaskList()
+
+@property NSMutableArray *tasks;
+- (NSString *) storagePath;
+
+@end
+
 @implementation TaskList
 
-@synthesize path;
-@synthesize tasks;
-
-- (TaskList *) initWithPath:(NSString *)p{
+- (id) init{
     self = [super init];
     if(self){
-        [self setPath:p];
-        [self setTasks:[[NSMutableArray alloc] init]];
+        [self loadTasksFromFile];
     }
     
     return self;
 }
 
 - (NSMutableArray *) loadTasksFromFile{
-    NSMutableArray *dicTasks = [[NSMutableArray alloc] initWithContentsOfFile:[self path]];
+
+    [self setTasks:[NSKeyedUnarchiver unarchiveObjectWithFile:[self storagePath]]];
     
     if(![self tasks]){
         [self setTasks:[[NSMutableArray alloc] init]];
     }
     
-    for(NSDictionary *d in dicTasks){
-        [[self tasks] addObject: [[Task alloc] initWithDueDate:d[@"Due Date"] andDescription:d[@"Description"]]];
-    }
-    
-    
     return [self tasks];
 }
 
-- (void) writeTasksToFile{
-    NSMutableArray *dictItems = [[NSMutableArray alloc] init];
-    for(Task *t in [self tasks]){
-        NSMutableDictionary *dicTask = [[NSMutableDictionary alloc] init];
-        [dicTask setObject:t.dueDate forKey:@"Due Date"];
-        [dicTask setObject:t.taskDescription forKey:@"Description"];
-        [dictItems addObject:dicTask];
-    }
-    
-    [dictItems writeToFile:[self path] atomically:YES];
+- (void) writeTasksToFile{    
+    [NSKeyedArchiver archiveRootObject:[self tasks] toFile:[self storagePath]];
 }
 
 - (void) addTask:(Task *)t{
@@ -55,5 +46,17 @@
 
     NSSortDescriptor *byDueDate = [NSSortDescriptor sortDescriptorWithKey:@"dueDate" ascending:YES];
     [[self tasks] sortUsingDescriptors:@[byDueDate]];
+}
+
+- (NSString *) storagePath{
+    return @"/tmp/tasks.archive";
+//    NSArray *documentDirectories = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+//    NSString *path = [documentDirectories objectAtIndex:0];
+//    
+//    return [path stringByAppendingPathComponent:@"tasks.archive"];
+}
+
+- (NSArray *) currentTasks{
+    return [[self tasks] copy];
 }
 @end
