@@ -18,11 +18,10 @@ DISCLAIMER:  These examples are my interpretation/modifications of exercises pre
 </li>
 
 <h2>iOS Application Sandbox Structure</h2>
-
-#Application Sandbox
-##Documents
-##Library
-####Caches
-####Preferences
-##tmp
-##MyApplication.app
+-Application Sandbox
+--Documents
+--Library
+----Caches
+----Preferences
+--tmp
+--MyApplication.app
