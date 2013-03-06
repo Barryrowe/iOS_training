@@ -29,6 +29,7 @@
 // Custom Implementation Methods
 //
 - (IBAction)backgroundTapped:(id)sender {
+    NSLog(@"%@", [NSString stringWithFormat:@"%s + %s + :)", "iOS Training", "snow" ]);
     [[self view] endEditing:YES];
 }
 
@@ -71,7 +72,7 @@
         image = [info objectForKey:UIImagePickerControllerEditedImage];
     }else{
         image = [info objectForKey:UIImagePickerControllerOriginalImage];
-//    }
+    }
     
     // Create a NSUUID object - and get its string representation
     NSUUID *uuid = [[NSUUID alloc] init];

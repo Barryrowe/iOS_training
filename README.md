@@ -16,3 +16,13 @@ DISCLAIMER:  These examples are my interpretation/modifications of exercises pre
 	<li> COMMAND + CTRL + Z = Send Shake Signal to iOS Simulator</li>
 	<li> OPTION + MOUSE = Multiple Touch input to iOS Simulator</li>
 </li>
+
+<h2>iOS Application Sandbox Structure</h2>
+
+#Application Sandbox
+##Documents
+##Library
+####Caches
+####Preferences
+##tmp
+##MyApplication.app
