@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BNRDrawView : UIView
+@interface BNRDrawView : UIView <UIGestureRecognizerDelegate>
 
 @end
