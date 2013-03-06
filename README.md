@@ -18,24 +18,24 @@ DISCLAIMER:  These examples are my interpretation/modifications of exercises pre
 </li>
 
 <h2>iOS Application Sandbox Structure</h2>
--Application Sandbox
---Documents
---Library
-----Caches
-----Preferences
---tmp
---MyApplication.app
+* Application Sandbox
+	>Documents
+	>Library
+		>Caches
+		>Preferences
+	>tmp
+	>MyApplication.app
 
 <h2>Application Lifecycle</h2>
-Not Running -> Application Launches
-	application:didFinishLaunchingWithOptions
-	applicationDidBecomeActive:
-Active -> Home Button Pressed
-	applicationWillResignActive:
-Inactive -> 
-	applicationDidEnterBackground:
-Background -> (after 5 seconds)
-Suspended -> (application IconTapped)
-	applicationWillEnterForeground: 
-	applicationDidBecomeActive:  
-Active
+* Not Running -> Application Launches
+	>application:didFinishLaunchingWithOptions
+	>applicationDidBecomeActive:
+* Active -> Home Button Pressed
+	>applicationWillResignActive:
+* Inactive -> 
+	>applicationDidEnterBackground:
+* Background -> (after 5 seconds)
+* Suspended -> (application IconTapped)
+	>applicationWillEnterForeground: 
+	>applicationDidBecomeActive:  
+* Active
