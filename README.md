@@ -19,18 +19,18 @@ DISCLAIMER:  These examples are my interpretation/modifications of exercises pre
 
 <h2>iOS Application Sandbox Structure</h2>
 * Application Sandbox
+	
+	* Documents
 
-	> Documents
+	* Library
 
-	> Library
+		* Caches
 
-		> Caches
+		* Preferences
 
-		> Preferences
+	* tmp
 
-	> tmp
-
-	> MyApplication.app
+	* MyApplication.app
 
 <h2>Application Lifecycle</h2>
 * Not Running -> Application Launches
