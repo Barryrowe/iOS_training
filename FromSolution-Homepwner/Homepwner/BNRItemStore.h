@@ -10,12 +10,16 @@
 @class BNRItem;
 
 @interface BNRItemStore : NSObject
-{
-    NSMutableArray *allItems;
-}
 
+//
+//Class Level Methods
+//
 + (BNRItemStore *)sharedStore;
+//-----
 
+//
+//BNRItem Methods
+//
 - (void)removeItem:(BNRItem *)p;
 
 - (NSArray *)allItems;
@@ -26,5 +30,11 @@
                 toIndex:(int)to;
 
 - (BOOL) saveChanges;
+//-----
 
+//
+//AssetType Methods
+//
+- (NSArray *) allAssetTypes;
+//-----
 @end

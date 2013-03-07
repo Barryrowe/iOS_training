@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BE4E18E2140D9EB80007F01B"
                BuildableName = "Homepwner.app"
-               BlueprintName = "Homepwner"
-               ReferencedContainer = "container:Homepwner.xcodeproj">
+               BlueprintName = "Homepwner_CoreData"
+               ReferencedContainer = "container:Homepwner_CoreData.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BE4E18E2140D9EB80007F01B"
             BuildableName = "Homepwner.app"
-            BlueprintName = "Homepwner"
-            ReferencedContainer = "container:Homepwner.xcodeproj">
+            BlueprintName = "Homepwner_CoreData"
+            ReferencedContainer = "container:Homepwner_CoreData.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -53,8 +53,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BE4E18E2140D9EB80007F01B"
             BuildableName = "Homepwner.app"
-            BlueprintName = "Homepwner"
-            ReferencedContainer = "container:Homepwner.xcodeproj">
+            BlueprintName = "Homepwner_CoreData"
+            ReferencedContainer = "container:Homepwner_CoreData.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -71,8 +71,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BE4E18E2140D9EB80007F01B"
             BuildableName = "Homepwner.app"
-            BlueprintName = "Homepwner"
-            ReferencedContainer = "container:Homepwner.xcodeproj">
+            BlueprintName = "Homepwner_CoreData"
+            ReferencedContainer = "container:Homepwner_CoreData.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

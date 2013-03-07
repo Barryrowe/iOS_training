@@ -10,6 +10,12 @@
 #import "BNRItem.h"
 #import "BNRImageStore.h"
 #import "BNRItemStore.h"
+#import "AssetTypePicker.h"
+
+@interface DetailViewController(){
+
+}
+@end
 
 @implementation DetailViewController
 @synthesize item;
@@ -79,7 +85,8 @@
     [dateFormatter setTimeStyle:NSDateFormatterNoStyle];
 
     // Use filtered NSDate object to set dateLabel contents
-    [dateLabel setText:[dateFormatter stringFromDate:[item dateCreated]]];
+    NSDate *date = [NSDate dateWithTimeIntervalSinceReferenceDate:[item dateCreated]];
+    [dateLabel setText:[dateFormatter stringFromDate:date]];
 
     // Change the navigation item to display name of item
     [[self navigationItem] setTitle:[item itemName]];
@@ -95,6 +102,13 @@
         // Clear the imageView
         [imageView setImage:nil];
     }
+    
+    NSString *typeLabel = [[[self item] assetType] valueForKey:@"label"];
+    if(!typeLabel){
+        typeLabel = @"None";
+    }
+    
+    [assetTypeButton setTitle:[NSString stringWithFormat:@"Type: %@", typeLabel]];
 }
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)io
 {
@@ -136,6 +150,9 @@
     [item setValueInDollars:[[valueField text] intValue]];
 }
 
+//
+//Action Outlets
+//
 - (IBAction)takePicture:(id)sender 
 {
     if([imagePickerPopover isPopoverVisible]) {
@@ -178,17 +195,29 @@
     }
 }
 
+- (IBAction) showAssetTypePicker:(id)sender {
+    [[self view] endEditing:YES];
+    
+    AssetTypePicker *assetTypePicker = [[AssetTypePicker alloc] init];
+    [assetTypePicker setItem:[self item]];
+    
+    [[self navigationController] pushViewController:assetTypePicker
+                                           animated:YES];
+}
+
+- (IBAction)backgroundTapped:(id)sender
+{
+    [[self view] endEditing:YES];
+    NSLog(@"%@", [self presentingViewController]);
+}
+//-----
+
 - (void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController
 {
     NSLog(@"User dismissed popover");
     imagePickerPopover = nil;
 }
 
-- (IBAction)backgroundTapped:(id)sender 
-{
-    [[self view] endEditing:YES];
-    NSLog(@"%@", [self presentingViewController]);
-}
 
 - (void)imagePickerController:(UIImagePickerController *)picker
 didFinishPickingMediaWithInfo:(NSDictionary *)info
@@ -238,4 +267,8 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
 
 }
 
+- (void)viewDidUnload {
+    assetTypeButton = nil;
+    [super viewDidUnload];
+}
 @end
