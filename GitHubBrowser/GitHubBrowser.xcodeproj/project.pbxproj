@@ -1,0 +1,374 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84D2AD3416E9309600C5D528 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D2AD3316E9309600C5D528 /* UIKit.framework */; };
+		84D2AD3616E9309600C5D528 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D2AD3516E9309600C5D528 /* Foundation.framework */; };
+		84D2AD3816E9309600C5D528 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D2AD3716E9309600C5D528 /* CoreGraphics.framework */; };
+		84D2AD3E16E9309600C5D528 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84D2AD3C16E9309600C5D528 /* InfoPlist.strings */; };
+		84D2AD4016E9309600C5D528 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D2AD3F16E9309600C5D528 /* main.m */; };
+		84D2AD4416E9309600C5D528 /* GitHubBrowserAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D2AD4316E9309600C5D528 /* GitHubBrowserAppDelegate.m */; };
+		84D2AD4616E9309600C5D528 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D2AD4516E9309600C5D528 /* Default.png */; };
+		84D2AD4816E9309600C5D528 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D2AD4716E9309600C5D528 /* Default@2x.png */; };
+		84D2AD4A16E9309600C5D528 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D2AD4916E9309600C5D528 /* Default-568h@2x.png */; };
+		84D2AD4D16E9309600C5D528 /* GitHubBrowserEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D2AD4C16E9309600C5D528 /* GitHubBrowserEventsViewController.m */; };
+		84D2AD4F16E9309600C5D528 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D2AD4E16E9309600C5D528 /* first.png */; };
+		84D2AD5116E9309600C5D528 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D2AD5016E9309600C5D528 /* first@2x.png */; };
+		84D2AD5416E9309600C5D528 /* GitHubBrowserSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D2AD5316E9309600C5D528 /* GitHubBrowserSecondViewController.m */; };
+		84D2AD5616E9309600C5D528 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D2AD5516E9309600C5D528 /* second.png */; };
+		84D2AD5816E9309600C5D528 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D2AD5716E9309600C5D528 /* second@2x.png */; };
+		84D2AD5B16E9309600C5D528 /* GitHubBrowserEventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D2AD5916E9309600C5D528 /* GitHubBrowserEventsViewController.xib */; };
+		84D2AD5E16E9309600C5D528 /* GitHubBrowserSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D2AD5C16E9309600C5D528 /* GitHubBrowserSecondViewController.xib */; };
+		84D2AD6916E9311C00C5D528 /* GHEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D2AD6816E9311C00C5D528 /* GHEvent.m */; };
+		84D2AD6B16E9361B00C5D528 /* gh_events.json in Resources */ = {isa = PBXBuildFile; fileRef = 84D2AD6A16E9361B00C5D528 /* gh_events.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		84D2AD3016E9309600C5D528 /* GitHubBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84D2AD3316E9309600C5D528 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		84D2AD3516E9309600C5D528 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		84D2AD3716E9309600C5D528 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		84D2AD3B16E9309600C5D528 /* GitHubBrowser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GitHubBrowser-Info.plist"; sourceTree = "<group>"; };
+		84D2AD3D16E9309600C5D528 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84D2AD3F16E9309600C5D528 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84D2AD4116E9309600C5D528 /* GitHubBrowser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GitHubBrowser-Prefix.pch"; sourceTree = "<group>"; };
+		84D2AD4216E9309600C5D528 /* GitHubBrowserAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GitHubBrowserAppDelegate.h; sourceTree = "<group>"; };
+		84D2AD4316E9309600C5D528 /* GitHubBrowserAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GitHubBrowserAppDelegate.m; sourceTree = "<group>"; };
+		84D2AD4516E9309600C5D528 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		84D2AD4716E9309600C5D528 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		84D2AD4916E9309600C5D528 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		84D2AD4B16E9309600C5D528 /* GitHubBrowserEventsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GitHubBrowserEventsViewController.h; sourceTree = "<group>"; };
+		84D2AD4C16E9309600C5D528 /* GitHubBrowserEventsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GitHubBrowserEventsViewController.m; sourceTree = "<group>"; };
+		84D2AD4E16E9309600C5D528 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		84D2AD5016E9309600C5D528 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		84D2AD5216E9309600C5D528 /* GitHubBrowserSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GitHubBrowserSecondViewController.h; sourceTree = "<group>"; };
+		84D2AD5316E9309600C5D528 /* GitHubBrowserSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GitHubBrowserSecondViewController.m; sourceTree = "<group>"; };
+		84D2AD5516E9309600C5D528 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		84D2AD5716E9309600C5D528 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		84D2AD5A16E9309600C5D528 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GitHubBrowserEventsViewController.xib; sourceTree = "<group>"; };
+		84D2AD5D16E9309600C5D528 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GitHubBrowserSecondViewController.xib; sourceTree = "<group>"; };
+		84D2AD6716E9311C00C5D528 /* GHEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHEvent.h; sourceTree = "<group>"; };
+		84D2AD6816E9311C00C5D528 /* GHEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHEvent.m; sourceTree = "<group>"; };
+		84D2AD6A16E9361B00C5D528 /* gh_events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gh_events.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84D2AD2D16E9309600C5D528 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D2AD3416E9309600C5D528 /* UIKit.framework in Frameworks */,
+				84D2AD3616E9309600C5D528 /* Foundation.framework in Frameworks */,
+				84D2AD3816E9309600C5D528 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84D2AD2716E9309600C5D528 = {
+			isa = PBXGroup;
+			children = (
+				84D2AD3916E9309600C5D528 /* GitHubBrowser */,
+				84D2AD3216E9309600C5D528 /* Frameworks */,
+				84D2AD3116E9309600C5D528 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84D2AD3116E9309600C5D528 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84D2AD3016E9309600C5D528 /* GitHubBrowser.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84D2AD3216E9309600C5D528 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84D2AD3316E9309600C5D528 /* UIKit.framework */,
+				84D2AD3516E9309600C5D528 /* Foundation.framework */,
+				84D2AD3716E9309600C5D528 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84D2AD3916E9309600C5D528 /* GitHubBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				84D2AD6A16E9361B00C5D528 /* gh_events.json */,
+				84D2AD6616E9310900C5D528 /* Models */,
+				84D2AD6516E930CA00C5D528 /* Views */,
+				84D2AD6416E930B800C5D528 /* Controllers */,
+				84D2AD4216E9309600C5D528 /* GitHubBrowserAppDelegate.h */,
+				84D2AD4316E9309600C5D528 /* GitHubBrowserAppDelegate.m */,
+				84D2AD4E16E9309600C5D528 /* first.png */,
+				84D2AD5016E9309600C5D528 /* first@2x.png */,
+				84D2AD5516E9309600C5D528 /* second.png */,
+				84D2AD5716E9309600C5D528 /* second@2x.png */,
+				84D2AD3A16E9309600C5D528 /* Supporting Files */,
+			);
+			path = GitHubBrowser;
+			sourceTree = "<group>";
+		};
+		84D2AD3A16E9309600C5D528 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84D2AD3B16E9309600C5D528 /* GitHubBrowser-Info.plist */,
+				84D2AD3C16E9309600C5D528 /* InfoPlist.strings */,
+				84D2AD3F16E9309600C5D528 /* main.m */,
+				84D2AD4116E9309600C5D528 /* GitHubBrowser-Prefix.pch */,
+				84D2AD4516E9309600C5D528 /* Default.png */,
+				84D2AD4716E9309600C5D528 /* Default@2x.png */,
+				84D2AD4916E9309600C5D528 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84D2AD6416E930B800C5D528 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84D2AD4B16E9309600C5D528 /* GitHubBrowserEventsViewController.h */,
+				84D2AD4C16E9309600C5D528 /* GitHubBrowserEventsViewController.m */,
+				84D2AD5216E9309600C5D528 /* GitHubBrowserSecondViewController.h */,
+				84D2AD5316E9309600C5D528 /* GitHubBrowserSecondViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		84D2AD6516E930CA00C5D528 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84D2AD5916E9309600C5D528 /* GitHubBrowserEventsViewController.xib */,
+				84D2AD5C16E9309600C5D528 /* GitHubBrowserSecondViewController.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		84D2AD6616E9310900C5D528 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84D2AD6716E9311C00C5D528 /* GHEvent.h */,
+				84D2AD6816E9311C00C5D528 /* GHEvent.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84D2AD2F16E9309600C5D528 /* GitHubBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84D2AD6116E9309600C5D528 /* Build configuration list for PBXNativeTarget "GitHubBrowser" */;
+			buildPhases = (
+				84D2AD2C16E9309600C5D528 /* Sources */,
+				84D2AD2D16E9309600C5D528 /* Frameworks */,
+				84D2AD2E16E9309600C5D528 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GitHubBrowser;
+			productName = GitHubBrowser;
+			productReference = 84D2AD3016E9309600C5D528 /* GitHubBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84D2AD2816E9309600C5D528 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GitHubBrowser;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = com.hp.es.demo;
+			};
+			buildConfigurationList = 84D2AD2B16E9309600C5D528 /* Build configuration list for PBXProject "GitHubBrowser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 84D2AD2716E9309600C5D528;
+			productRefGroup = 84D2AD3116E9309600C5D528 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84D2AD2F16E9309600C5D528 /* GitHubBrowser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84D2AD2E16E9309600C5D528 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D2AD3E16E9309600C5D528 /* InfoPlist.strings in Resources */,
+				84D2AD4616E9309600C5D528 /* Default.png in Resources */,
+				84D2AD4816E9309600C5D528 /* Default@2x.png in Resources */,
+				84D2AD4A16E9309600C5D528 /* Default-568h@2x.png in Resources */,
+				84D2AD4F16E9309600C5D528 /* first.png in Resources */,
+				84D2AD5116E9309600C5D528 /* first@2x.png in Resources */,
+				84D2AD5616E9309600C5D528 /* second.png in Resources */,
+				84D2AD5816E9309600C5D528 /* second@2x.png in Resources */,
+				84D2AD5B16E9309600C5D528 /* GitHubBrowserEventsViewController.xib in Resources */,
+				84D2AD5E16E9309600C5D528 /* GitHubBrowserSecondViewController.xib in Resources */,
+				84D2AD6B16E9361B00C5D528 /* gh_events.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84D2AD2C16E9309600C5D528 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D2AD4016E9309600C5D528 /* main.m in Sources */,
+				84D2AD4416E9309600C5D528 /* GitHubBrowserAppDelegate.m in Sources */,
+				84D2AD4D16E9309600C5D528 /* GitHubBrowserEventsViewController.m in Sources */,
+				84D2AD5416E9309600C5D528 /* GitHubBrowserSecondViewController.m in Sources */,
+				84D2AD6916E9311C00C5D528 /* GHEvent.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84D2AD3C16E9309600C5D528 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84D2AD3D16E9309600C5D528 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		84D2AD5916E9309600C5D528 /* GitHubBrowserEventsViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84D2AD5A16E9309600C5D528 /* en */,
+			);
+			name = GitHubBrowserEventsViewController.xib;
+			sourceTree = "<group>";
+		};
+		84D2AD5C16E9309600C5D528 /* GitHubBrowserSecondViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84D2AD5D16E9309600C5D528 /* en */,
+			);
+			name = GitHubBrowserSecondViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84D2AD5F16E9309600C5D528 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84D2AD6016E9309600C5D528 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84D2AD6216E9309600C5D528 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GitHubBrowser/GitHubBrowser-Prefix.pch";
+				INFOPLIST_FILE = "GitHubBrowser/GitHubBrowser-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		84D2AD6316E9309600C5D528 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GitHubBrowser/GitHubBrowser-Prefix.pch";
+				INFOPLIST_FILE = "GitHubBrowser/GitHubBrowser-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84D2AD2B16E9309600C5D528 /* Build configuration list for PBXProject "GitHubBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84D2AD5F16E9309600C5D528 /* Debug */,
+				84D2AD6016E9309600C5D528 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84D2AD6116E9309600C5D528 /* Build configuration list for PBXNativeTarget "GitHubBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84D2AD6216E9309600C5D528 /* Debug */,
+				84D2AD6316E9309600C5D528 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84D2AD2816E9309600C5D528 /* Project object */;
+}
