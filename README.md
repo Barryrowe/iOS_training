@@ -45,3 +45,6 @@ DISCLAIMER:  These examples are my interpretation/modifications of exercises pre
 
 	> applicationDidBecomeActive:  
 * Active
+
+<h2>Things to Read More About</h2>
+* <a href="https://github.com/couchbaselabs/TouchDB-iOS">TouchDB</a> 
