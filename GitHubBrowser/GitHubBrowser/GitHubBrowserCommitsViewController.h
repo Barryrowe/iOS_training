@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GitHubBrowserSecondViewController : UIViewController
+@interface GitHubBrowserCommitsViewController : UIViewController <UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *commitsTable;
 
 @end

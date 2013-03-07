@@ -19,13 +19,14 @@
 		84D2AD4D16E9309600C5D528 /* GitHubBrowserEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D2AD4C16E9309600C5D528 /* GitHubBrowserEventsViewController.m */; };
 		84D2AD4F16E9309600C5D528 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D2AD4E16E9309600C5D528 /* first.png */; };
 		84D2AD5116E9309600C5D528 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D2AD5016E9309600C5D528 /* first@2x.png */; };
-		84D2AD5416E9309600C5D528 /* GitHubBrowserSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D2AD5316E9309600C5D528 /* GitHubBrowserSecondViewController.m */; };
+		84D2AD5416E9309600C5D528 /* GitHubBrowserCommitsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D2AD5316E9309600C5D528 /* GitHubBrowserCommitsViewController.m */; };
 		84D2AD5616E9309600C5D528 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D2AD5516E9309600C5D528 /* second.png */; };
 		84D2AD5816E9309600C5D528 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D2AD5716E9309600C5D528 /* second@2x.png */; };
 		84D2AD5B16E9309600C5D528 /* GitHubBrowserEventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D2AD5916E9309600C5D528 /* GitHubBrowserEventsViewController.xib */; };
-		84D2AD5E16E9309600C5D528 /* GitHubBrowserSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D2AD5C16E9309600C5D528 /* GitHubBrowserSecondViewController.xib */; };
+		84D2AD5E16E9309600C5D528 /* GitHubBrowserCommitsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D2AD5C16E9309600C5D528 /* GitHubBrowserCommitsViewController.xib */; };
 		84D2AD6916E9311C00C5D528 /* GHEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D2AD6816E9311C00C5D528 /* GHEvent.m */; };
 		84D2AD6B16E9361B00C5D528 /* gh_events.json in Resources */ = {isa = PBXBuildFile; fileRef = 84D2AD6A16E9361B00C5D528 /* gh_events.json */; };
+		84D2AD6E16E944D000C5D528 /* GHCommit.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D2AD6D16E944D000C5D528 /* GHCommit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,15 +47,17 @@
 		84D2AD4C16E9309600C5D528 /* GitHubBrowserEventsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GitHubBrowserEventsViewController.m; sourceTree = "<group>"; };
 		84D2AD4E16E9309600C5D528 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		84D2AD5016E9309600C5D528 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		84D2AD5216E9309600C5D528 /* GitHubBrowserSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GitHubBrowserSecondViewController.h; sourceTree = "<group>"; };
-		84D2AD5316E9309600C5D528 /* GitHubBrowserSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GitHubBrowserSecondViewController.m; sourceTree = "<group>"; };
+		84D2AD5216E9309600C5D528 /* GitHubBrowserCommitsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GitHubBrowserCommitsViewController.h; sourceTree = "<group>"; };
+		84D2AD5316E9309600C5D528 /* GitHubBrowserCommitsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GitHubBrowserCommitsViewController.m; sourceTree = "<group>"; };
 		84D2AD5516E9309600C5D528 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		84D2AD5716E9309600C5D528 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		84D2AD5A16E9309600C5D528 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GitHubBrowserEventsViewController.xib; sourceTree = "<group>"; };
-		84D2AD5D16E9309600C5D528 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GitHubBrowserSecondViewController.xib; sourceTree = "<group>"; };
+		84D2AD5D16E9309600C5D528 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GitHubBrowserCommitsViewController.xib; sourceTree = "<group>"; };
 		84D2AD6716E9311C00C5D528 /* GHEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHEvent.h; sourceTree = "<group>"; };
 		84D2AD6816E9311C00C5D528 /* GHEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHEvent.m; sourceTree = "<group>"; };
 		84D2AD6A16E9361B00C5D528 /* gh_events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gh_events.json; sourceTree = "<group>"; };
+		84D2AD6C16E944D000C5D528 /* GHCommit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHCommit.h; sourceTree = "<group>"; };
+		84D2AD6D16E944D000C5D528 /* GHCommit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHCommit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,8 +138,8 @@
 			children = (
 				84D2AD4B16E9309600C5D528 /* GitHubBrowserEventsViewController.h */,
 				84D2AD4C16E9309600C5D528 /* GitHubBrowserEventsViewController.m */,
-				84D2AD5216E9309600C5D528 /* GitHubBrowserSecondViewController.h */,
-				84D2AD5316E9309600C5D528 /* GitHubBrowserSecondViewController.m */,
+				84D2AD5216E9309600C5D528 /* GitHubBrowserCommitsViewController.h */,
+				84D2AD5316E9309600C5D528 /* GitHubBrowserCommitsViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -145,7 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				84D2AD5916E9309600C5D528 /* GitHubBrowserEventsViewController.xib */,
-				84D2AD5C16E9309600C5D528 /* GitHubBrowserSecondViewController.xib */,
+				84D2AD5C16E9309600C5D528 /* GitHubBrowserCommitsViewController.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -155,6 +158,8 @@
 			children = (
 				84D2AD6716E9311C00C5D528 /* GHEvent.h */,
 				84D2AD6816E9311C00C5D528 /* GHEvent.m */,
+				84D2AD6C16E944D000C5D528 /* GHCommit.h */,
+				84D2AD6D16E944D000C5D528 /* GHCommit.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -220,7 +225,7 @@
 				84D2AD5616E9309600C5D528 /* second.png in Resources */,
 				84D2AD5816E9309600C5D528 /* second@2x.png in Resources */,
 				84D2AD5B16E9309600C5D528 /* GitHubBrowserEventsViewController.xib in Resources */,
-				84D2AD5E16E9309600C5D528 /* GitHubBrowserSecondViewController.xib in Resources */,
+				84D2AD5E16E9309600C5D528 /* GitHubBrowserCommitsViewController.xib in Resources */,
 				84D2AD6B16E9361B00C5D528 /* gh_events.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,8 +240,9 @@
 				84D2AD4016E9309600C5D528 /* main.m in Sources */,
 				84D2AD4416E9309600C5D528 /* GitHubBrowserAppDelegate.m in Sources */,
 				84D2AD4D16E9309600C5D528 /* GitHubBrowserEventsViewController.m in Sources */,
-				84D2AD5416E9309600C5D528 /* GitHubBrowserSecondViewController.m in Sources */,
+				84D2AD5416E9309600C5D528 /* GitHubBrowserCommitsViewController.m in Sources */,
 				84D2AD6916E9311C00C5D528 /* GHEvent.m in Sources */,
+				84D2AD6E16E944D000C5D528 /* GHCommit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,12 +265,12 @@
 			name = GitHubBrowserEventsViewController.xib;
 			sourceTree = "<group>";
 		};
-		84D2AD5C16E9309600C5D528 /* GitHubBrowserSecondViewController.xib */ = {
+		84D2AD5C16E9309600C5D528 /* GitHubBrowserCommitsViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				84D2AD5D16E9309600C5D528 /* en */,
 			);
-			name = GitHubBrowserSecondViewController.xib;
+			name = GitHubBrowserCommitsViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

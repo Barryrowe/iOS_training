@@ -10,7 +10,7 @@
 
 #import "GitHubBrowserEventsViewController.h"
 
-#import "GitHubBrowserSecondViewController.h"
+#import "GitHubBrowserCommitsViewController.h"
 
 @implementation GitHubBrowserAppDelegate
 
@@ -19,7 +19,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     UIViewController *viewController1 = [[GitHubBrowserEventsViewController alloc] initWithNibName:@"GitHubBrowserEventsViewController" bundle:nil];
-    UIViewController *viewController2 = [[GitHubBrowserSecondViewController alloc] initWithNibName:@"GitHubBrowserSecondViewController" bundle:nil];
+    UIViewController *viewController2 = [[GitHubBrowserCommitsViewController alloc] initWithNibName:@"GitHubBrowserCommitsViewController" bundle:nil];
     self.tabBarController = [[UITabBarController alloc] init];
     self.tabBarController.viewControllers = @[viewController1, viewController2];
     self.window.rootViewController = self.tabBarController;

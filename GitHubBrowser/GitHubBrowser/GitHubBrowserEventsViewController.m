@@ -27,9 +27,9 @@
         self.title = @"Events";
         self.tabBarItem.image = [UIImage imageNamed:@"first"];
         
-        NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"gh_events" ofType:@"json"];
-        NSData *jsonData = [NSData dataWithContentsOfFile:jsonPath];
-        _ghEvents = [GHEvent eventsFromJSON:jsonData];
+//        NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"gh_events" ofType:@"json"];
+//        NSData *jsonData = [NSData dataWithContentsOfFile:jsonPath];
+//        _ghEvents = [GHEvent eventsFromJSON:jsonData];
     }
     return self;
 }
