@@ -22,6 +22,8 @@
 		844EA2C016E4F3EA00E46698 /* fells_loop.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 844EA2BF16E4F3EA00E46698 /* fells_loop.gpx */; };
 		844EA2C216E4F8DD00E46698 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844EA2C116E4F8DD00E46698 /* MapKit.framework */; };
 		844EA2C516E4FFA200E46698 /* WhereAmIMapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 844EA2C416E4FFA200E46698 /* WhereAmIMapPoint.m */; };
+		84D2AD2416E9249200C5D528 /* WhereAmISettings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84D2AD2316E9249200C5D528 /* WhereAmISettings.bundle */; };
+		84D2AD2616E929AE00C5D528 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84D2AD2516E929AE00C5D528 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		844EA2C116E4F8DD00E46698 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		844EA2C316E4FFA200E46698 /* WhereAmIMapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhereAmIMapPoint.h; sourceTree = "<group>"; };
 		844EA2C416E4FFA200E46698 /* WhereAmIMapPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhereAmIMapPoint.m; sourceTree = "<group>"; };
+		84D2AD2316E9249200C5D528 /* WhereAmISettings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WhereAmISettings.bundle; sourceTree = "<group>"; };
+		84D2AD2516E929AE00C5D528 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 		844EA28E16E4E8B800E46698 = {
 			isa = PBXGroup;
 			children = (
+				84D2AD2516E929AE00C5D528 /* Settings.bundle */,
 				844EA2C116E4F8DD00E46698 /* MapKit.framework */,
 				844EA2BF16E4F3EA00E46698 /* fells_loop.gpx */,
 				844EA2BD16E4E95400E46698 /* CoreLocation.framework */,
@@ -105,6 +110,7 @@
 				844EA2A116E4E8B800E46698 /* Supporting Files */,
 				844EA2C316E4FFA200E46698 /* WhereAmIMapPoint.h */,
 				844EA2C416E4FFA200E46698 /* WhereAmIMapPoint.m */,
+				84D2AD2316E9249200C5D528 /* WhereAmISettings.bundle */,
 			);
 			path = WhereAmI;
 			sourceTree = "<group>";
@@ -181,6 +187,8 @@
 				844EA2B116E4E8B800E46698 /* Default-568h@2x.png in Resources */,
 				844EA2B716E4E8B800E46698 /* WhereAmIViewController.xib in Resources */,
 				844EA2C016E4F3EA00E46698 /* fells_loop.gpx in Resources */,
+				84D2AD2416E9249200C5D528 /* WhereAmISettings.bundle in Resources */,
+				84D2AD2616E929AE00C5D528 /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +325,7 @@
 				844EA2BC16E4E8B800E46698 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

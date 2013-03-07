@@ -10,7 +10,7 @@
 #import "WhereAmIMapPoint.h"
 
 @interface WhereAmIViewController (){
-        CLLocationManager *_locationManager;
+    CLLocationManager *_locationManager;
 }
 
 @property (nonatomic, strong) IBOutlet MKMapView *worldView;
@@ -25,7 +25,15 @@
 - (IBAction) toggleMapType:(id)sender;
 @end
 
+NSString * const WhereAmIMapTypePrefKey = @"WhereAmIMapTypePrefKey";
+
 @implementation WhereAmIViewController
+
+
++ (void)initialize{
+    NSDictionary *defaults = [NSDictionary dictionaryWithObject:[NSNumber numberWithInt:1] forKey:WhereAmIMapTypePrefKey];
+    [[NSUserDefaults standardUserDefaults] registerDefaults:defaults];
+}
 
 - (id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -44,7 +52,11 @@
 //Controller Interface Implementations
 - (void) viewDidLoad{
     [[self worldView] setShowsUserLocation:YES];
-    [[self worldView] setMapType:MKMapTypeStandard];
+    NSInteger mapTypeValue = [[NSUserDefaults standardUserDefaults] integerForKey:WhereAmIMapTypePrefKey];
+    
+    //Update the UI
+    [[self mapTypeToggle] setSelectedSegmentIndex:mapTypeValue];
+    [self toggleMapType:[self mapTypeToggle]];
 }
 
 - (void) findLocation{
@@ -68,6 +80,9 @@
 }
 
 - (IBAction) toggleMapType:(id)sender{
+    [[NSUserDefaults standardUserDefaults] setInteger:[sender selectedSegmentIndex]
+                                               forKey:WhereAmIMapTypePrefKey];
+    
     int index = [_mapTypeToggle selectedSegmentIndex];
     
     if(index == 0){

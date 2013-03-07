@@ -15,7 +15,7 @@ DISCLAIMER:  These examples are my interpretation/modifications of exercises pre
 	<li> COMMAND + SHIFT + H = Send Home Function to iOS Simulator</li>
 	<li> COMMAND + CTRL + Z = Send Shake Signal to iOS Simulator</li>
 	<li> OPTION + MOUSE = Multiple Touch input to iOS Simulator</li>
-</li>
+</ul>
 
 <h2>iOS Application Sandbox Structure</h2>
 * Application Sandbox

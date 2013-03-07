@@ -165,13 +165,10 @@
     NSString *nameWithType = [p itemName];
     NSLog(@"%@", [p assetType]);
     if([p assetType] != nil){
-        NSLog(@"Hey it's there");
         NSString *type = [[p assetType] valueForKey:@"label"];
-        NSLog(@"%@", type);
         nameWithType = [nameWithType stringByAppendingString:[NSString stringWithFormat:@":%@", type]];
-        NSLog(@"Appended: %@", nameWithType);
     }
-    [[cell nameLabel] setText: nameWithType];//[p itemName]];
+    [[cell nameLabel] setText: nameWithType];
     [[cell serialNumberLabel] setText:[p serialNumber]];
     [[cell valueLabel] setText:[NSString stringWithFormat:@"$%d", [p valueInDollars]]];
     [[cell thumbnailView] setImage:[p thumbnail]];

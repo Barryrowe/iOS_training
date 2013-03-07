@@ -22,7 +22,6 @@
 		BE4E18FE140D9EE70007F01B /* ItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4E18FD140D9EE70007F01B /* ItemsViewController.m */; };
 		BE4E1904140DA6EC0007F01B /* BNRItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4E1903140DA6EC0007F01B /* BNRItemStore.m */; };
 		BE58F4A5141011C300C6D116 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE58F4A3141011C300C6D116 /* DetailViewController.m */; };
-		BE58F4A6141011C300C6D116 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE58F4A4141011C300C6D116 /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,7 +51,6 @@
 		BE4E1903140DA6EC0007F01B /* BNRItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItemStore.m; sourceTree = "<group>"; };
 		BE58F4A2141011C300C6D116 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		BE58F4A3141011C300C6D116 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		BE58F4A4141011C300C6D116 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +91,6 @@
 			children = (
 				BE58F4A2141011C300C6D116 /* DetailViewController.h */,
 				BE58F4A3141011C300C6D116 /* DetailViewController.m */,
-				BE58F4A4141011C300C6D116 /* DetailViewController.xib */,
 				BE4E18FC140D9EE70007F01B /* ItemsViewController.h */,
 				BE4E18FD140D9EE70007F01B /* ItemsViewController.m */,
 				84D2AD1D16E8F80000C5D528 /* AssetTypePicker.h */,
@@ -217,7 +214,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE4E18F0140D9EB80007F01B /* InfoPlist.strings in Resources */,
-				BE58F4A6141011C300C6D116 /* DetailViewController.xib in Resources */,
 				8481727716E7C57200AABC48 /* HomepwnerItemCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
