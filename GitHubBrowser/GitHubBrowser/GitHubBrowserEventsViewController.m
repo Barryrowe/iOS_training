@@ -72,7 +72,7 @@
     NSMutableURLRequest *newReq = [[NSMutableURLRequest alloc] initWithURL:url];
     [newReq setValue:@"NO-CACHE" forHTTPHeaderField:@"Cache-control"];
     
-    void (^handler)(NSURLResponse *urlResponse, NSData *responseData, NSError *error) =
+    void (^handler)(NSURLResponse *, NSData *, NSError *) =
     ^(NSURLResponse *urlResponse, NSData *responseData, NSError *error){
         if([urlResponse isKindOfClass:[NSHTTPURLResponse class]]){
             NSDictionary *headers = [(NSHTTPURLResponse *)urlResponse allHeaderFields];
